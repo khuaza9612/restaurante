@@ -1,7 +1,7 @@
 const { Router } = require('express');
 const router = Router();
 
-router.use('/auth', require('./auth'));
+//router.use('/auth', require('./auth'));
 router.use(require('./menu'));
 router.use(require('./empleado'));
 router.use(require('./clients'));
