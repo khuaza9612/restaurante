@@ -9,7 +9,11 @@ import './index.css';
 
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import dotenv from 'dotenv';
+import axios from 'axios';
+dotenv.config();
 
+axios.defaults.baseURL = process.env.REACT_APP_API||"https://restaurante-col.herokuapp.com/api";
 ReactDOM.render(
   <React.StrictMode>
     <CartProvider>
